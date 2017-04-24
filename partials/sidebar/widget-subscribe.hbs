@@ -1,0 +1,12 @@
+{{#if @labs.subscribers}}
+  <div class='c-widget'>
+    <h3 class='c-widget__title'>Newsletter</h3>
+
+    {{  subscribe_form
+        form_class='c-subscribe-form'
+        input_class='c-subscribe-form__input'
+        placeholder='Email'
+        button_class='c-subscribe-form__btn c-btn c-btn--full c-btn--small'
+    }}
+  </div>
+{{/if}}

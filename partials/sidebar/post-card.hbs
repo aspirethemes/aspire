@@ -1,0 +1,25 @@
+<div class='c-post-card-recent'>
+
+  <a href='{{ url }}' class='js-fadein c-post-card-recent__image' style='background-image: url({{ image }})'>
+    {{#if featured}}
+    <span title='Featured Post'>
+      <span class='c-post-card-recent--featured__icon' data-icon='ei-star' data-size='s'></span>
+    </span>
+    {{/if}}
+  </a>
+
+  <div class='c-post-card-recent__meta'>
+    {{#author}}
+      <a class='c-post-card-recent__author' href='{{ url }}' title='{{ name }}'>{{ name }} - </a>
+    {{/author}}
+
+    <div class='c-post-card-recent__date'>
+      <time datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD MMMM YYYY' }}</time>
+    </div>
+
+    <h3 class='c-post-card-recent__title'>
+      <a href='{{ url }}' class='c-post-card-recent__link'>{{ title }}</a>
+    </h3>
+  </div>
+
+</div>

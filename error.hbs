@@ -1,0 +1,26 @@
+{{!< default}}
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-archive'>
+        <h4 class='c-archive__title'>404</h4>
+        <p class='c-archive__description'>Page Not Found</p>
+      </div>
+    </div>
+  </div>
+
+  <div class='o-grid'>
+    {{#get 'posts' limit='6' include='author'}}
+      <div class='o-grid__col o-grid__col--full'>
+        <h4 class='u-left'>Recent Posts</h4>
+        <a href='{{ @blog.url }}' class='u-right u-font-medium'>Home Page &#x27A3;</a>
+      </div>
+      {{#foreach posts}}
+        {{> post-card }}
+      {{/foreach}}
+    {{/get}}
+  </div>
+
+</div>

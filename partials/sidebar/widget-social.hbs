@@ -1,0 +1,44 @@
+<div class='c-widget'>
+  <h3 class='c-widget__title'>Follow</h3>
+  <ul class='c-social-widget o-plain-list'>
+    {{# if @blog.twitter}}
+      <li class='c-social-widget__item'>
+        <a href='{{ twitter_url }}' class='c-social-widget__link' target='_blank'>
+          <span data-icon='ei-sc-twitter' class='c-social-widget__icon' data-size='s'></span>
+        </a>
+      </li>
+    {{/if}}
+    {{# if @blog.facebook}}
+      <li class='c-social-widget__item'>
+        <a href='{{ facebook_url }}' class='c-social-widget__link' target='_blank'>
+          <span data-icon='ei-sc-facebook' class='c-social-widget__icon' data-size='s'></span>
+        </a>
+      </li>
+    {{/if}}
+    <li class='c-social-widget__item'>
+      <a href='{{! Instagram URL }}' class='c-social-widget__link' target='_blank'>
+        <span data-icon='ei-sc-instagram' class='c-social-widget__icon' data-size='s'></span>
+      </a>
+    </li>
+    <li class='c-social-widget__item'>
+      <a href='{{! Pinterest URL }}' class='c-social-widget__link' target='_blank' class='block'>
+        <span data-icon='ei-sc-pinterest' class='c-social-widget__icon' data-size='s'></span>
+      </a>
+    </li>
+    <li class='c-social-widget__item'>
+      <a href='{{! Vimeo URL }}' class='c-social-widget__link' target='_blank' class='block'>
+        <span data-icon='ei-sc-vimeo' class='c-social-widget__icon' data-size='s'></span>
+      </a>
+    </li>
+    <li class='c-social-widget__item'>
+      <a href='{{! Google+ URL }}' class='c-social-widget__link' target='_blank' class='block'>
+        <span data-icon='ei-sc-google-plus' class='c-social-widget__icon' data-size='s'></span>
+      </a>
+    </li>
+    <li class='c-social-widget__item'>
+      <a href='{{! Add YouTube+ URL }}' class='c-social-widget__link' target='_blank' class='block'>
+        <span data-icon='ei-sc-youtube' class='c-social-widget__icon' data-size='s'></span>
+      </a>
+    </li>
+  </ul>
+</div>

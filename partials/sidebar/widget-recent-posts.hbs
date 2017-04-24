@@ -1,0 +1,9 @@
+{{#get 'posts' limit='3' include='author' filter='id:-{{post.id}}' as |recent-posts|}}
+  <div class='c-widget'>
+    <h5 class='c-widget__title'>Recent Stories</h5>
+
+    {{#foreach recent-posts}}
+      {{> sidebar/post-card}}
+    {{/foreach}}
+  </div>
+{{/get}}

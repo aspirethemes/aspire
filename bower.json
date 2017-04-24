@@ -1,0 +1,12 @@
+{
+  "name": "Maxima",
+  "description": "Minimal Blog & Magazine Ghost Theme",
+  "authors": [
+    "Aspire Themes"
+  ],
+  "dependencies": {
+    "jQuery-viewport-checker": "^1.8.7",
+    "jquery.fitvids": "fitvids#^1.1.0",
+    "jquery": "^3.1.0"
+  }
+}

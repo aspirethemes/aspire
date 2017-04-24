@@ -1,0 +1,25 @@
+{{!< default}}
+
+{{#post}}
+
+<div class='c-post-hero' style='background-image: url({{ image }})'></div>
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--center o-grid__col--2-3-m'>
+      <article class='c-{{ post_class }}'>
+
+        <h2 class='c-post__title'>{{ title }}</h2>
+
+        <div class='c-content'>
+          {{ content }}
+        </div>
+
+      </article>
+    </div>
+  </div>
+
+</div>
+
+{{/post}}

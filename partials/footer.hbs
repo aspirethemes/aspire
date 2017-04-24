@@ -1,0 +1,68 @@
+<footer class='c-footer'>
+  <div class='o-grid'>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--1-3-m o-grid__col--1-3-l {{#if @labs.subscribers}} o-grid__col--2-4-m o-grid__col--1-4-l {{/if}}'>
+      <a href='{{ @blog.url }}'>{{ @blog.title }}</a>
+    </div>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--1-3-m o-grid__col--1-3-l {{#if @labs.subscribers}} o-grid__col--2-4-m o-grid__col--1-4-l {{/if}}'>
+      <ul class='c-footer-list o-plain-list'>
+        {{ navigation }}
+      </ul>
+    </div>
+
+    <div class='o-grid__col o-grid__col--4-4-s o-grid__col--1-3-m o-grid__col--1-3-l {{#if @labs.subscribers}} o-grid__col--2-4-m o-grid__col--1-4-l {{/if}}'>
+      <ul class='c-footer-list o-plain-list'>
+        {{#if @blog.twitter}}
+          <li>
+            <a href='{{ twitter_url }}' target='_blank'>
+              <span data-icon='ei-sc-twitter' data-size='s'></span>
+              Twitter
+            </a>
+          </li>
+        {{/if}}
+        {{#if @blog.facebook}}
+          <li>
+            <a href='{{ facebook_url }}' target='_blank'>
+              <span data-icon='ei-sc-facebook' data-size='s'></span>
+              Facebook
+            </a>
+          </li>
+        {{/if}}
+        <li>
+          <a href='{{! Instagram URL }}' target='_blank'>
+            <span data-icon='ei-sc-instagram' data-size='s'></span>
+            Instagram
+          </a>
+        </li>
+        <li>
+          <a href='{{! Pinterest URL }}' target='_blank' class='block'>
+            <span data-icon='ei-sc-pinterest' data-size='s'></span>
+            Pinterest
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    {{#if @labs.subscribers}}
+      <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-4-l'>
+        <div class='site-footer__section column medium-3 large-3'>
+          <p class='u-font-medium'>Newsletter</p>
+          {{  subscribe_form
+              form_class='c-subscribe-form'
+              input_class='c-subscribe-form__input'
+              placeholder='Email'
+              button_class='c-subscribe-form__btn c-btn c-btn--small c-btn--full'
+          }}
+        </div>
+      </div>
+    {{/if}}
+
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-footer__copy'>
+        <span class='u-font-small u-text-center u-block'>&copy; {{ date format='YYYY' }} {{ @blog.title }}</span>
+      </div>
+    </div>
+
+  </div>
+</footer>

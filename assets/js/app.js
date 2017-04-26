@@ -6,7 +6,7 @@ $(document).ready(function() {
   // Homepage Layout
   // ===============
 
-  // Add large-6 to second and third posts in homepage, so each one will be 50% width
+  // Make the second and third posts in homepage be 50% width
   $('.home-template .js-post-card-wrap:nth-of-type(2), .home-template .js-post-card-wrap:nth-of-type(3)')
   .addClass('o-grid__col--2-4-m o-grid__col--2-4-l');
 

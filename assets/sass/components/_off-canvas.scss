@@ -9,8 +9,8 @@ $off-canvas-width: 300px;
   position: relative;
   top: half($base-spacing-unit);
   z-index: 10;
-  height: 19px;
-  width: 25px;
+  height: 24px;
+  width: 24px;
   cursor: pointer;
 
   @include mq($from: desktop) {
@@ -39,13 +39,24 @@ $off-canvas-width: 300px;
 
     .c-off-canvas-toggle--close & {
       height: 2px;
-      visibility: hidden;
+      background-color: transparent;
 
       &:before,
-      &:after { visibility: visible; }
+      &:after {
+        position: relative;
+        visibility: visible;
+        background: $color-black;
+      }
 
-      &:before { transform: rotate(-45deg); }
-      &:after  { transform: rotate(45deg); }
+      &:before {
+        top: 11px;
+        transform: rotate(-45deg);
+      }
+
+      &:after {
+        top: 9px;
+        transform: rotate(45deg);
+      }
     }
   }
 
@@ -77,12 +88,19 @@ body {
     position: fixed;
     top: 0;
     right: 0;
+    z-index: 1;
     width: $off-canvas-width;
     height: 100vh;
     overflow-y: auto;
-    padding: double($base-spacing-unit);
+    padding: ($base-spacing-unit + half($base-spacing-unit)) double($base-spacing-unit);
     background-color: $bg-white;
     transform: translate3d($off-canvas-width, 0, 0);
+
+    @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+      &.is-active {
+        right: $off-canvas-width;
+      }
+    }
   }
 
   .c-off-canvas-container {

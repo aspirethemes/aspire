@@ -1,0 +1,13 @@
+/*------------------------------------*\
+  Components > Widget Instagram
+\*------------------------------------*/
+
+.c-widget-instagram {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__item {
+    flex: 1 33%;
+    border: 1px solid $color-white;
+  }
+}

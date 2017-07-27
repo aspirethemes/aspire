@@ -3,11 +3,9 @@
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='description' content='{{ meta_description }}'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
-  <title>{{ meta_title }}</title>
 
-  <link rel='shortcut icon' href='{{ asset '/favicon.ico' }}'>
+  <title>{{ meta_title }}</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
 
   {{> compiled/inline-css }}
 
@@ -26,5 +24,7 @@
   </div>
 
   <script src='{{ asset 'js/app.min.js' }}'></script>
+  {{!-- Load instagram.js only in single post --}}
+  {{#is 'post'}}<script src='{{ asset 'js/instagram.js' }}'></script>{{/is}}
 </body>
 </html>

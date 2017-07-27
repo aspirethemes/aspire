@@ -44,6 +44,7 @@
   gulp.task('js', function() {
     return gulp.src([
       './bower_components/jquery/dist/jquery.js',
+      './bower_components/instafeed.js/instafeed.js',
       './bower_components/jquery.fitvids/jquery.fitvids.js',
       './bower_components/jQuery-viewport-checker/dist/jquery.viewportchecker.min.js',
       './node_modules/evil-icons/assets/evil-icons.min.js',

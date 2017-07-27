@@ -3,29 +3,21 @@ $(document).ready(function() {
   'use strict';
 
   // =====================
-  // Homepage Layout
-  // =====================
-
-  // Make the second and third posts in homepage be 50% width
-  $('.home-template .js-post-card-wrap:nth-of-type(2), .home-template .js-post-card-wrap:nth-of-type(3)')
-  .addClass('o-grid__col--2-4-m o-grid__col--2-4-l');
-
-  // =====================
-  // Responsive videos
-  // =====================
-
-  $('.c-content').fitVids({
-    'customSelector': ['iframe[src*="ted.com"]']
-  });
-
-  // =====================
-  // Off Canvas menu
+  // Off Canvas Menu
   // =====================
 
   $('.js-off-canvas-toggle').click(function(e) {
     e.preventDefault();
     $('.js-off-canvas-content, .js-off-canvas-container').toggleClass('is-active');
   });
+
+  // =====================
+  // Homepage Layout
+  // =====================
+
+  // Make the second and third posts in homepage be 50% width
+  $('.home-template .js-post-card-wrap:nth-of-type(2), .home-template .js-post-card-wrap:nth-of-type(3)')
+  .addClass('o-grid__col--2-4-m o-grid__col--2-4-l');
 
   // =====================
   // Post Card Images Fade
@@ -35,6 +27,14 @@ $(document).ready(function() {
     classToAdd: 'is-inview', // Class to add to the elements when they are visible
     offset: 100,
     removeClassAfterAnimation: true
+  });
+
+  // =====================
+  // Responsive Videos
+  // =====================
+
+  $('.c-content').fitVids({
+    'customSelector': ['iframe[src*="ted.com"]']
   });
 
   // =====================

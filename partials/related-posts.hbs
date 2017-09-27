@@ -4,14 +4,16 @@
  -->
 
 {{#get 'posts' limit='3' include='author' filter='tags:[{{post.tags}}]+id:-{{post.id}}' as |related-posts|}}
-  <div class='c-related'>
-    <div class='o-grid'>
-      <div class='o-grid__col o-grid__col--full'>
-        <h5 class='c-related__title'>You Might Be Interested In</h5>
+  {{#if related-posts}}
+    <div class='c-related'>
+      <div class='o-grid'>
+        <div class='o-grid__col o-grid__col--full'>
+          <h5 class='c-related__title'>You Might Be Interested In</h5>
+        </div>
+        {{#foreach related-posts}}
+          {{> post-card}}
+        {{/foreach}}
       </div>
-      {{#foreach related-posts}}
-        {{> post-card}}
-      {{/foreach}}
     </div>
-  </div>
+  {{/if}}
 {{/get}}

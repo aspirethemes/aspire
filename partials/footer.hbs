@@ -15,7 +15,7 @@
       <ul class='c-footer-list o-plain-list'>
         {{#if @blog.twitter}}
           <li>
-            <a href='{{ twitter_url }}' target='_blank'>
+            <a href='{{ twitter_url }}' target='_blank' rel='noopener'>
               <span data-icon='ei-sc-twitter' data-size='s'></span>
               Twitter
             </a>
@@ -23,20 +23,20 @@
         {{/if}}
         {{#if @blog.facebook}}
           <li>
-            <a href='{{ facebook_url }}' target='_blank'>
+            <a href='{{ facebook_url }}' target='_blank' rel='noopener'>
               <span data-icon='ei-sc-facebook' data-size='s'></span>
               Facebook
             </a>
           </li>
         {{/if}}
         <li>
-          <a href='{{! Instagram URL }}' target='_blank'>
+          <a href='#' target='_blank' rel='noopener'>
             <span data-icon='ei-sc-instagram' data-size='s'></span>
             Instagram
           </a>
         </li>
         <li>
-          <a href='{{! Pinterest URL }}' target='_blank' class='block'>
+          <a href='#' target='_blank' class='block'>
             <span data-icon='ei-sc-pinterest' data-size='s'></span>
             Pinterest
           </a>

@@ -1,26 +1,26 @@
 <ul class='o-plain-list c-social-nav'>
   {{# if @blog.facebook}}
     <li class='c-social-nav__item'>
-      <a href='{{ facebook_url }}' target='_blank'>
+      <a href='{{ facebook_url }}' aria-label='Facebook' target='_blank' rel='noopener'>
         <span class='c-social-nav__icon' data-icon='ei-sc-facebook' data-size='s'></span>
       </a>
     </li>
   {{/if}}
   {{# if @blog.twitter}}
     <li class='c-social-nav__item'>
-      <a href='{{ twitter_url }}' target='_blank'>
+      <a href='{{ twitter_url }}' aria-label='Twitter' target='_blank' rel='noopener'>
         <span class='c-social-nav__icon' data-icon='ei-sc-twitter' data-size='s'></span>
       </a>
     </li>
   {{/if}}
   <li class='c-social-nav__item'>
-    <a href='{{! Instagram URL }}' target='_blank'>
+    <a href='#' aria-label='Instagram' target='_blank' rel='noopener'>
       <span class='c-social-nav__icon' data-icon='ei-sc-instagram' data-size='s'></span>
     </a>
   </li>
   <li class='c-social-nav__item'>
-    <a class="toggle-search-button js-search-toggle" href="#">
-      <span class='c-social-nav__icon' data-icon="ei-search" data-size="s"></span>
+    <a href='#' class='toggle-search-button js-search-toggle' aria-label='Search'>
+      <span class='c-social-nav__icon' data-icon='ei-search' data-size='s'></span>
     </a>
   </li>
 </ul>

@@ -1,6 +1,6 @@
 {
   "name": "aspire",
-  "version": "1.4.5",
+  "version": "1.4.6",
   "description": "Clean News & Magazine Ghost Theme",
   "scripts": {
     "postinstall": "bower install"

@@ -13,18 +13,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     text-decoration: none;
+    transition: opacity $global-transition ease-in-out;
 
-    @include mq($from: tablet) {
+    &.js-fadein {
       opacity: 0;
-      transition: opacity $global-transition ease-in-out;
+    }
 
-      &.is-inview {
-        opacity: 1;
-      }
-
-      @media screen and ( -webkit-min-device-pixel-ratio: 0 ) {
-        opacity: 1;
-      }
+    &.is-inview {
+      opacity: 1;
     }
 
     &:before {

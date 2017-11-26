@@ -17,21 +17,14 @@
     background-size: cover;
     background-color: $bg-gray;
     margin-bottom: half($base-spacing-unit);
+    transition: opacity $global-transition ease-in-out;
 
-    @include mq($from: tablet) {
-      &.js-fadein {
-        opacity: 0;
+    &.js-fadein {
+      opacity: 0;
+    }
 
-        @media screen and ( -webkit-min-device-pixel-ratio: 0 ) {
-          opacity: 1;
-        }
-      }
-
-      transition: opacity $global-transition ease-in-out;
-
-      &.is-inview {
-        opacity: 1;
-      }
+    &.is-inview {
+      opacity: 1;
     }
 
     &:before {

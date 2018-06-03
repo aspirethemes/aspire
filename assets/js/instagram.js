@@ -15,9 +15,9 @@ $(document).ready(function() {
     limit: 9,
     resolution: 'thumbnail',
     userId: '441902919',
-    accessToken: '441902919.1677ed0.f529ef23cd5e42c48fd5c402dc0732fc',
+    accessToken: '441902919.1677ed0.ab9040eff64249dcbfb19b6d48b4e909',
     template:
-      '<div class="c-widget-instagram__item"><a href="{{link}}" aria-label="{{caption}}" target="_blank"><img src="{{image}}"></a></div>'
+      '<div class="c-widget-instagram__item"><a href="{{link}}" title="{{caption}}" aria-label="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}"></a></div>'
   });
 
   if ($('#instafeed').length) {

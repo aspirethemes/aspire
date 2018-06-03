@@ -2,10 +2,20 @@
   Elements > Inputs
 \*------------------------------------*/
 
-input[type='text']   ,
-input[type='tel']    ,
-input[type='number'] ,
-input[type='email']  ,
+input[type='text'],
+input[type='password'],
+input[type='date'],
+input[type='month'],
+input[type='week'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='tel'],
+input[type='time'],
+input[type='url'],
+input[type='color'],
+input[type='datetime'],
+input[type='datetime-local'],
 select,
 textarea {
   width: 100%;
@@ -18,7 +28,7 @@ textarea {
   font-size: $font-size-medium;
   transition: $global-transition;
 
-  @include attention() {
-    border: 1px solid $color-gray;
+  &:focus {
+    border-color: 1px solid $color-gray;
   }
 }

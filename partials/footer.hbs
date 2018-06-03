@@ -46,12 +46,12 @@
 
     {{#if @labs.subscribers}}
       <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-4-l'>
-        <p class='u-font-medium'>Newsletter</p>
+        <p class='u-font-medium'>{{t 'Newsletter' }}</p>
 
         {{  subscribe_form
             form_class='c-subscribe-form'
             input_class='c-subscribe-form__input'
-            placeholder='Email'
+            placeholder=(t 'Email')
             button_class='c-subscribe-form__btn c-btn c-btn--small c-btn--full'
         }}
       </div>
@@ -60,7 +60,7 @@
     <div class='o-grid__col o-grid__col--full'>
       <div class='c-footer__copy'>
         <span class='u-font-small u-text-center u-block'>
-          &copy; {{ date format='YYYY' }} {{ @blog.title }} - Published with <a href='https://ghost.org' target='_blank' rel='noopener'>Ghost</a>
+          &copy; {{ date format='YYYY' }} {{ @blog.title }} - {{{t "Published with {ghostlink}" ghostlink="<a href=\"https://ghost.org\">Ghost</a>" }}}
         </span>
       </div>
     </div>

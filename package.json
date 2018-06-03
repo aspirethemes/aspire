@@ -1,6 +1,6 @@
 {
   "name": "aspire",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "Clean News & Magazine Ghost Theme",
   "scripts": {
     "postinstall": "bower install"
@@ -22,6 +22,8 @@
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.2",
     "jshint-stylish": "^2.2.0",
+    "lunr": "^0.7.0",
+    "lunr-languages": "^1.0.0",
     "prismjs": "^1.8.1",
     "run-sequence": "^2.2.0"
   },

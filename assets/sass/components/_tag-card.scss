@@ -26,11 +26,12 @@
     &:before {
       position: absolute;
       top: 0;
-      height: 100%;
-      width: 100%;
+      bottom: 0;
+      left: 0;
+      right: 0;
       content: '';
-      background-color: $bg-dark-opacity;
       transition: $global-transition;
+      background: linear-gradient(0deg, rgba($color-black, .4) 0, transparent 32%);
     }
 
     &:after {

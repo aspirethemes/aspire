@@ -1,13 +1,15 @@
 <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-3-l c-post-card-wrap js-post-card-wrap {{#is 'home'}} {{#if @first}} c-post-card-wrap--first {{/if}} {{/is}}'>
   <div class='c-post-card {{#is 'home'}} {{#if @first}} c-post-card--first {{/if}} {{/is}}'>
 
-    <a href='{{ url }}' class='js-fadein c-post-card__image' style='background-image: url({{ feature_image }})' aria-label='{{ title }}'>
-      {{#if featured}}
-      <span title='Featured Post'>
-        <span class='c-post-card--featured__icon' data-icon='ei-star' data-size='s'></span>
-      </span>
-      {{/if}}
-    </a>
+    <div class='c-post-card__media'>
+      <a href='{{ url }}' class='js-fadein c-post-card__image' style='background-image: url({{ feature_image }})' aria-label='{{ title }}'>
+        {{#if featured}}
+        <span title='{{t "Featured Post" }}'>
+          <span class='c-post-card--featured__icon' data-icon='ei-star' data-size='s'></span>
+        </span>
+        {{/if}}
+      </a>
+    </div>
 
     <div class='c-post-card__meta'>
       {{^is 'author'}}
@@ -17,7 +19,7 @@
       {{/is}}
 
       <div class='c-post-card__date'>
-        <time datetime='{{ date format='YYYY-MM-DD' }}' title='{{ date format='DD MMMM YYYY' }}'>{{ date format='DD MMMM YYYY' }}</time>
+        <time datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD MMMM YYYY' }}</time>
       </div>
 
       <h2 class='c-post-card__title'>

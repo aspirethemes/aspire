@@ -19,13 +19,18 @@
     width: 100%;
   }
 
+  &__media {
+    overflow: hidden;
+    background-color: $bg-gray;
+    margin-bottom: half($base-spacing-unit);
+  }
+
   &__image {
+    display: block;
     position: relative;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: $bg-gray;
-    margin-bottom: $base-spacing-unit;
     transition: opacity $global-transition ease-in-out;
 
     &.js-fadein {
@@ -59,7 +64,6 @@
     margin-bottom: 0;
     font-weight: $font-weight-regular;
     font-size: $font-size-base;
-    // line-height: $line-height-medium;
     transition: $global-transition;
   }
 
@@ -111,8 +115,11 @@
 .c-post-card--first {
 
   @include mq($from: tablet) {
-    .c-post-card__image {
+    .c-post-card__media {
       margin-bottom: 0;
+    }
+
+    .c-post-card__image {
       outline: 2px solid rgba($color-white, .5);
       outline-offset: - (half($base-spacing-unit) + half(quarter($base-spacing-unit)));
 

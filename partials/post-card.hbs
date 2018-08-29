@@ -12,11 +12,9 @@
     </div>
 
     <div class='c-post-card__meta'>
-      {{^is 'author'}}
-        {{#author}}
-          <a class='c-post-card__author' href='{{ url }}' title='{{ name }}'>{{ name }} - </a>
-        {{/author}}
-      {{/is}}
+      {{#primary_author}}
+        <a class='c-post-card__author' href='{{ url }}' title='{{ name }}'>{{ name }} - </a>
+      {{/primary_author}}
 
       <div class='c-post-card__date'>
         <time datetime='{{ date format='YYYY-MM-DD' }}'>{{ date format='DD MMMM YYYY' }}</time>

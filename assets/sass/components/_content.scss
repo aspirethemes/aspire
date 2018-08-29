@@ -7,10 +7,8 @@
 
   @include mq($until: tablet) {
     img {
-      position: relative;
-      left: 50%;
-      max-width: 115%;
-      transform: translate(-50%);
+      max-width: 100vw;
+      pointer-events: none;
     }
   }
 
@@ -39,6 +37,64 @@
     // Target Safari Only
     &:not(:root:root) {
       -webkit-padding-start: half($base-spacing-unit);
+    }
+  }
+}
+
+// Koenig Editor
+
+.kg-embed-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  min-width: 100%;
+}
+
+.kg-embed-card,
+.kg-image-card {
+  figcaption {
+    width: 100%;
+    text-align: center;
+    color: $color-gray;
+    font-size: $font-size-small;
+    font-family: $font-sans-serif;
+    font-weight: $font-weight-regular;
+    line-height: $line-height-small;
+    margin-top: half($base-spacing-unit) + half(quarter($base-spacing-unit));
+  }
+}
+
+.is-page .c-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  address,
+  h1, h2, h3, h4, h5, h6,
+  blockquote, p, pre,
+  dl, ol, ul,
+  figure,
+  hr,
+  table,
+  fieldset,
+  .footnotes {
+    min-width: 100%;
+  }
+
+  .kg-width-full .kg-image {
+    @include mq($from: tablet) {
+      max-width: 100vw;
+      pointer-events: none;
+    }
+  }
+
+  .kg-width-wide .kg-image {
+    @include mq($from: tablet) {
+      max-width: 75vw;
+    }
+
+    @include mq($from: desktop) {
+      max-width: 65vw;
     }
   }
 }

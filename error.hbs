@@ -12,7 +12,7 @@
   </div>
 
   <div class='o-grid'>
-    {{#get 'posts' limit='6' include='author'}}
+    {{#get 'posts' limit='6' include='authors'}}
       <div class='o-grid__col o-grid__col--full'>
         <h4 class='u-left'>{{t 'Recent Posts' }}</h4>
         <a href='{{ @blog.url }}' class='u-right u-font-medium'>{{t 'Home Page' }} &#x27A3;</a>

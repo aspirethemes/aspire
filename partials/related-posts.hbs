@@ -1,7 +1,6 @@
 <!--
   Get related posts based on tags
-  https://themes.ghost.org/docs/recent-featured-sidebar#extra-special-sauce-related-posts
- -->
+-->
 
 {{#get 'posts' limit='3' include='authors' filter='tags:[{{post.tags}}]+id:-{{post.id}}' as |related-posts|}}
   {{#if related-posts}}

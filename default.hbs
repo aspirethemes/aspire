@@ -9,10 +9,6 @@
 
   {{> compiled/inline-css }}
 
-  <script>
-    var ghost_blog_url = '{{ @blog.url }}';
-  </script>
-
   {{ ghost_head }}
 </head>
 <body class='{{ body_class }}'>
@@ -23,12 +19,13 @@
     {{{ body }}}
 
     {{> footer}}
-
-    {{ ghost_foot }}
   </div>
 
   <script src='{{ asset 'js/app.min.js' }}'></script>
+
   {{!-- Load instagram.js only in single post --}}
   {{#is 'post'}}<script src='{{ asset 'js/instagram.js' }}'></script>{{/is}}
+
+  {{ ghost_foot }}
 </body>
 </html>

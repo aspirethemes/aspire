@@ -1,6 +1,6 @@
 {
   "name": "aspire",
-  "version": "1.5.1",
+  "version": "1.5.2",
   "engines": {
     "ghost": ">=2.0.0",
     "ghost-api": "v2"

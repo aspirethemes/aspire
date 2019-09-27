@@ -95,7 +95,6 @@ $(document).ready(function() {
     onKeyUp         : true,
     result_template : search_result_template,
     zeroResultsInfo : false,
-    includepages 	: true,
     displaySearchInfo: false,
     before: function() {
       search_results.fadeIn();

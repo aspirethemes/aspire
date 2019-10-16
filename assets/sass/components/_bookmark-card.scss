@@ -62,6 +62,13 @@ a.kg-bookmark-container {
   flex-wrap: wrap;
 }
 
+.kg-bookmark-publisher {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 240px;
+}
+
 .kg-bookmark-icon {
   width: $base-spacing-unit + half($base-spacing-unit);
   height: $base-spacing-unit + half($base-spacing-unit);

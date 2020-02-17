@@ -7,6 +7,18 @@
   align-items: center;
   flex-direction: column;
   font-family: $font-serif;
+  hyphens: auto;
+
+  > * + * {
+    margin-top: double($base-spacing-unit);
+  }
+
+  h1 + *,
+  h2 + *,
+  h3 + *,
+  h4 + * {
+    margin-top: half($base-spacing-unit);
+  }
 
   @include mq($until: tablet) {
     img {
@@ -31,10 +43,10 @@
   form,
   table,
   fieldset,
+  blockquote,
   .footnotes,
   .cp_embed_wrapper {
     min-width: 100%;
-    margin-bottom: double($base-spacing-unit);
   }
 
   h1,
@@ -42,8 +54,10 @@
   h3,
   h4 {
     font-family: $font-sans-serif;
-    font-weight: $font-weight-regular;
-    margin-bottom: half($base-spacing-unit);
+  }
+
+  hr {
+    margin-bottom: 0;
   }
 
   dd,
@@ -63,10 +77,6 @@
   align-items: center;
   flex-direction: column;
   min-width: 100%;
-}
-
-.kg-card {
-  margin-bottom: double($base-spacing-unit);
 }
 
 .kg-card figcaption {

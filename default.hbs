@@ -18,6 +18,8 @@
 <body class='{{ body_class }}'>
 
   <div class='js-off-canvas-container c-off-canvas-container'>
+    {{> notifications }}
+
     {{> header }}
 
     {{{ body }}}
@@ -26,10 +28,6 @@
   </div>
 
   <script src='{{ asset 'js/app.min.js' }}'></script>
-
-  {{!-- Load instagram.js only in single post --}}
-  {{#is 'post'}}<script src='{{ asset 'js/instagram.js' }}'></script>{{/is}}
-
   {{ ghost_foot }}
 </body>
 </html>

@@ -4,9 +4,8 @@
 
 hr {
   height: 1px;
-  margin: double($base-spacing-unit) 0;
-
+  width: 100%;
   border: 0;
-
+  margin: double($base-spacing-unit) 0;
   background-color: $color-border;
 }

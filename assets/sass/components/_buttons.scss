@@ -19,7 +19,7 @@ $btn-bg-hover: #253B6E;
   border: 0;
   border-radius: 0;
   color: $color-white;
-  white-space: initial;
+  white-space: nowrap;
   background-color: $btn-bg;
   font-size: $font-size-medium;
   font-family: $font-sans-serif;
@@ -29,6 +29,31 @@ $btn-bg-hover: #253B6E;
     color: $color-white;
     text-decoration: none;
     background-color: $btn-bg-hover;
+  }
+
+  &.loading {
+    position: relative;
+    padding-right: $line-height-base + quarter($line-height-base);
+
+    @-webkit-keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    &:after {
+      position: absolute;
+      top: 18px;
+      right: 14px;
+      content: '';
+      display: block;
+      height: half($line-height-base);
+      width: half($line-height-base);
+      border: 2px solid $color-white;
+      border-radius: 100%;
+      border-right-color: transparent;
+      border-top-color: transparent;
+      animation: spin 500ms infinite linear;
+    }
   }
 
   &--full {

@@ -1,9 +1,9 @@
 {
   "name": "aspire",
-  "version": "1.5.5",
+  "version": "1.5.6",
   "engines": {
-    "ghost": ">=2.0.0",
-    "ghost-api": "v2"
+    "ghost": ">=3.0.0",
+    "ghost-api": "v3"
   },
   "keywords": [
     "ghost-theme"
@@ -29,6 +29,7 @@
     "jshint-stylish": "^2.2.0",
     "lunr": "^0.7.0",
     "lunr-languages": "^1.0.0",
+    "normalize.css": "^8.0.1",
     "prismjs": "^1.8.1",
     "run-sequence": "^2.2.0"
   },

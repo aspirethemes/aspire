@@ -107,4 +107,8 @@ $grid-gutter: $base-spacing-unit;
   &--end {
     margin-left: auto;
   }
+
+  &--initial-grow {
+    flex-grow: initial;
+  }
 }

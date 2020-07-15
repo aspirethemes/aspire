@@ -11,7 +11,7 @@
       <ul class='c-footer-list o-plain-list'>
         {{#if @site.twitter}}
           <li>
-            <a href='{{ twitter_url }}' target='_blank' rel='noopener'>
+            <a href='{{ twitter_url }}' target='_blank' rel='noopener noreferrer'>
               <span data-icon='ei-sc-twitter' data-size='s'></span>
               Twitter
             </a>
@@ -19,20 +19,20 @@
         {{/if}}
         {{#if @site.facebook}}
           <li>
-            <a href='{{ facebook_url }}' target='_blank' rel='noopener'>
+            <a href='{{ facebook_url }}' target='_blank' rel='noopener noreferrer'>
               <span data-icon='ei-sc-facebook' data-size='s'></span>
               Facebook
             </a>
           </li>
         {{/if}}
         <li>
-          <a href='#' target='_blank' rel='noopener'>
+          <a href='#' target='_blank' rel='noopener noreferrer'>
             <span data-icon='ei-sc-instagram' data-size='s'></span>
             Instagram
           </a>
         </li>
         <li>
-          <a href='#' target='_blank' class='block'>
+          <a href='#' target='_blank' class='block' rel='noopener noreferrer'>
             <span data-icon='ei-sc-pinterest' data-size='s'></span>
             Pinterest
           </a>
@@ -44,15 +44,16 @@
       {{#unless @member}}
         <div class='o-grid__col o-grid__col--4-4-s o-grid__col--2-4-m o-grid__col--1-4-l'>
           <p class='u-font-medium'>{{t 'Newsletter' }}</p>
-          {{> subscribe-form }}
+          {{> subscribe-form inputLabel='subscribe-email-footer'}}
         </div>
       {{/unless}}
     {{/if}}
 
     <div class='o-grid__col o-grid__col--full'>
       <div class='c-footer__copy'>
-        <span class='u-font-small u-text-center u-block'>
-          &copy; {{ date format='YYYY' }} {{ @site.title }} - {{{t "Published with {ghostlink}" ghostlink="<a href=\"https://ghost.org\">Ghost</a>" }}}
+        <span class='u-font-tiny u-text-center u-block'>
+          &copy; {{ date format='YYYY' }} {{ @site.title }} &ndash;
+          {{{t 'Published with {ghostLink} & {themeLink}' ghostLink='<a href=\'https://ghost.org\'>Ghost</a>' themeLink='<a href=\'https://aspirethemes.com/themes/aspire\'>Aspire</a>' }}}
         </span>
       </div>
     </div>

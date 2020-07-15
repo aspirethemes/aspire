@@ -31,7 +31,7 @@
       right: 0;
       content: '';
       transition: $global-transition;
-      background: linear-gradient(0deg, rgba($color-black, .4) 0, transparent 32%);
+      background: linear-gradient(0deg, rgba($color-black, .5) 0, transparent 60%);
     }
 
     &:after {
@@ -50,9 +50,8 @@
     margin-bottom: 0;
     padding: $base-spacing-unit;
     font-size: $font-size-base;
-    font-weight: $font-weight-regular;
+    font-weight: $font-weight-bold;
     color: $color-white;
-    text-shadow: $text-shadow;
   }
 
   @include attention() {

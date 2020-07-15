@@ -1,6 +1,6 @@
 {
   "name": "aspire",
-  "version": "1.5.6",
+  "version": "1.5.7",
   "engines": {
     "ghost": ">=3.0.0",
     "ghost-api": "v3"
@@ -45,6 +45,7 @@
     "dart-sass": "^1.17.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^3.2.1",
+    "gulp-zip": "^5.0.2",
     "node-sass": "^4.11.0"
   }
 }

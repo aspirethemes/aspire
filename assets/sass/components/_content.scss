@@ -7,7 +7,7 @@
   align-items: center;
   flex-direction: column;
   font-family: $font-serif;
-  hyphens: auto;
+  word-break: break-word;
 
   > * + * {
     margin-top: double($base-spacing-unit);
@@ -71,6 +71,10 @@
 }
 
 // Koenig Editor
+
+.kg-image {
+  margin: auto;
+}
 
 .kg-embed-card {
   display: flex;

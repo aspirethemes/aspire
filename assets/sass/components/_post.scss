@@ -10,11 +10,10 @@
   &__date {
     color: $color-gray;
     font-size: $font-size-small;
-    font-weight: $font-weight-regular;
   }
 
   &__title {
-    font-weight: $font-weight-regular;
+    font-weight: $font-weight-bold;
     line-height: initial;
     margin-top: 0;
     margin-bottom: double($base-spacing-unit);

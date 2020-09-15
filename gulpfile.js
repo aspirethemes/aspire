@@ -99,7 +99,7 @@
       '!bower_components/**',
       '!.git/**',
       '!.DS_Store'
-      ])
+    ], { dot: true })
     .pipe(zip('aspire.zip'))
     .pipe(gulp.dest('../'))
     done();

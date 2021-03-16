@@ -1,9 +1,9 @@
 {
   "name": "aspire",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "engines": {
-    "ghost": ">=3.0.0",
-    "ghost-api": "v3"
+    "ghost": ">=4.0.0",
+    "ghost-api": "v4"
   },
   "keywords": [
     "ghost-theme"
@@ -23,14 +23,16 @@
     "gulp-plumber": "^1.0.1",
     "gulp-rename": "^1.2.2",
     "gulp-replace": "^0.6.1",
+    "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-util": "^3.0.7",
     "jshint": "^2.9.6",
     "jshint-stylish": "^2.2.0",
     "lunr": "^0.7.0",
-    "lunr-languages": "^1.0.0",
+    "lunr-languages": "^1.4.0",
+    "node-sass": "^5.0.0",
     "normalize.css": "^8.0.1",
-    "prismjs": "^1.8.1",
+    "prismjs": "^1.23.0",
     "run-sequence": "^2.2.0"
   },
   "author": {
@@ -44,8 +46,6 @@
   "devDependencies": {
     "dart-sass": "^1.17.0",
     "gulp": "^4.0.0",
-    "gulp-sass": "^3.2.1",
-    "gulp-zip": "^5.0.2",
-    "node-sass": "^4.11.0"
+    "gulp-zip": "^5.0.2"
   }
 }

@@ -14,33 +14,31 @@
 
         <h1 class='c-post__title'>{{ title }}</h1>
 
-        {{#if access}}
         <div class='c-content'>
           {{ content }}
         </div>
 
-        {{#if tags}}
-          <div class='c-tags'>
-            {{ tags separator='' }}
+        {{#if access}}
+          {{#if tags}}
+            <div class='c-tags'>
+              {{ tags separator='' }}
+            </div>
+          {{/if}}
+
+          <div class='o-grid'>
+            <div class='o-grid__col o-grid__col--full'>
+              {{> share }}
+            </div>
           </div>
+
+          <hr>
         {{/if}}
 
-        <div class='o-grid'>
-          <div class='o-grid__col o-grid__col--full'>
-            {{> share }}
-          </div>
-        </div>
-
-        <hr>
-        {{/if}}
-
-        {{#if @labs.members}}
-          {{#unless @member}}
-            {{#if access}}
-              {{> post-subscribe }}
-            {{/if}}
-          {{/unless}}
-        {{/if}}
+        {{#unless @member}}
+          {{#if access}}
+            {{> post-subscribe }}
+          {{/if}}
+        {{/unless}}
 
         {{#if access}}
           {{#primary_author}}

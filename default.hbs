@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang='en'>
+<html lang='{{ @site.locale }}'>
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -18,8 +18,6 @@
 <body class='{{ body_class }}'>
 
   <div class='js-off-canvas-container c-off-canvas-container'>
-    {{> notifications }}
-
     {{> header }}
 
     {{{ body }}}

@@ -1,9 +1,8 @@
 {
   "name": "aspire",
-  "version": "1.5.9",
+  "version": "1.6.0",
   "engines": {
-    "ghost": ">=4.0.0",
-    "ghost-api": "v4"
+    "ghost": ">=5.0.0"
   },
   "keywords": [
     "ghost-theme"
@@ -41,7 +40,10 @@
     "url": "https://aspirethemes.com/"
   },
   "config": {
-    "posts_per_page": 12
+    "posts_per_page": 12,
+    "card_assets": {
+      "exclude": ["bookmark", "gallery"]
+    }
   },
   "devDependencies": {
     "dart-sass": "^1.17.0",
